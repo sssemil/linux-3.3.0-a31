@@ -156,10 +156,10 @@ build_modules()
 	make -C modules/example LICHEE_MOD_DIR=${LICHEE_MOD_DIR} LICHEE_KDIR=${LICHEE_KDIR} \
 		CONFIG_CHIP_ID=${CONFIG_CHIP_ID} install
 
-	build_nand_lib
-	make -C modules/nand LICHEE_MOD_DIR=${LICHEE_MOD_DIR} LICHEE_KDIR=${LICHEE_KDIR} \
-		CONFIG_CHIP_ID=${CONFIG_CHIP_ID} install
-	copy_nand_mod
+#	build_nand_lib
+#	make -C modules/nand LICHEE_MOD_DIR=${LICHEE_MOD_DIR} LICHEE_KDIR=${LICHEE_KDIR} \
+#		CONFIG_CHIP_ID=${CONFIG_CHIP_ID} install
+#	copy_nand_mod
 #	(
 #	export LANG=en_US.UTF-8
 #	unset LANGUAGE
